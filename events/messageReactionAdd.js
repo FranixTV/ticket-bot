@@ -47,7 +47,7 @@ module.exports = {
 
                         let embed = new Discord.MessageEmbed()
                         .setTitle('Ticket created')
-                        .setDescription('Simple ticket here with a lot of text, maybe it should take its time and break to a different level you dumb twat')
+                        .setDescription('Simple ticket text here, nothing much to see.')
                         .setColor(client.config.colors.main);
 
                         await ticketChannel.send(embed);
