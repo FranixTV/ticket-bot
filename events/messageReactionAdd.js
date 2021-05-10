@@ -47,15 +47,17 @@ module.exports = {
 
                         let embed = new Discord.MessageEmbed()
                         .setTitle('Ticket created')
-                        .setDescription('Simple ticket here')
+                        .setDescription('Simple ticket here with a lot of text, maybe it should take its time and break to a different level you dumb twat')
                         .setColor(client.config.colors.main);
 
                         await ticketChannel.send(embed);
 
+                        let date = new Date();
+
                         const ticket = new Ticket({
                             userID: user.id,
                             channelID: ticketChannel.id,
-                            creationDate: new Date()
+                            creationDate: date.toLocaleString("en-US")
                         });
 
                         ticket.save()

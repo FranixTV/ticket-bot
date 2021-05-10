@@ -45,6 +45,12 @@ body {
     font-size: 25px;
 }
 
+.name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
 .message-container {
   display: flex;
   flex-direction: column;
@@ -58,5 +64,39 @@ body {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+.embed {
+    display: flex;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 0 7px 7px 0;
+    position: relative;
+    margin-left: 5px;
+    max-width: 500px;
+}
+
+.embed-color {
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+    border-radius: 7px 0 0 7px
+}
+
+.embed-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.embed-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.embed-description {
+    margin-top: 15px;
 }
 </style>
